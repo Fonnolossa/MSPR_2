@@ -1,0 +1,17 @@
+{
+    "serveurs": [
+        {
+            "nom": "Serveur-AD1",
+            "ip": "172.16.60.7",
+            "utilisateur": "Administrateur@mspr.local",
+            "mot_de_passe": "Azerty12345"
+        },
+        {
+            "nom": "Serveur-AD2",
+            "ip": "172.16.60.14",
+            "utilisateur": "Administrateur@mspr.local",
+            "mot_de_passe": "Azerty12345"
+        }
+       
+    ]
+}
