@@ -16,25 +16,23 @@ def afficher_en_tete():
     """Affiche une jolie bannière au démarrage sans casser l'ASCII art"""
     console.clear()
 
-    # On utilise un raw string (r"") pour que Python ignore les backslashs
+    # ASCII Art corrigé pour "NTL-SysToolbox"
     ascii_art = r"""
-  _   _ _____ _          _____            _____           _ _               
- | \ | |_   _| |        / ____|          |_   _|         | | |              
- |  \| | | | | |  _____| (___  _   _ ______| | ___   ___ | | |__   _____  __
- | . ` | | | | | |______\___ \| | | |______| |/ _ \ / _ \| | '_ \ / _ \ \/ /
- | |\  | | | | |____    ____) | |_| |      | | (_) | (_) | | |_) | (_) >  < 
- |_| \_| |_| |______|  |_____/ \__, |      |_|\___/ \___/|_|_.__/ \___/_/\_\
-                                __/ |                                       
-                               |___/                                        
+  _   _ _______ _            _____           _______          _ _               
+ | \ | |__   __| |          / ____|         |__   __|        | | |              
+ |  \| |  | |  | |  ______ | (___  _   _ ___   | | ___   ___ | | |__   _____  __
+ | . ` |  | |  | | |______| \___ \| | | / __|  | |/ _ \ / _ \| | '_ \ / _ \ \/ /
+ | |\  |  | |  | |____      ____) | |_| \__ \  | | (_) | (_) | | |_) | (_) >  < 
+ |_| \_|  |_|  |______|    |_____/ \__, |___/  |_|\___/ \___/|_|_.__/ \___/_/\_\
+                                    __/ |                                       
+                                   |___/                                        
 """
 
-    # Text() force rich à traiter le dessin comme du texte pur sans chercher de balises [ ]
     texte_brut = Text(ascii_art, style="bold cyan")
 
-    # Affichage dans un joli cadre
     panneau = Panel(
         texte_brut,
-        title="Projet MSPR - Groupe 3",
+        title="[bold white]Projet MSPR - Groupe 3[/bold white]",
         border_style="blue",
         expand=False
     )
