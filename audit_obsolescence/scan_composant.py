@@ -4,8 +4,6 @@ from pathlib import Path
 import paramiko
 import ipaddress
 
-
-
 def demander_ipv4_cidr():
     while True:
         cidr_input = input("Entrez une IPv4 avec masque (ex: 192.168.1.0/24) : ").strip()
