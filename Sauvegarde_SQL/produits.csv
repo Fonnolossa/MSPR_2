@@ -1,0 +1,6 @@
+id;nom_produit;prix;stock;categorie;cree_le
+1;Clavier;29.99;15;Informatique;2026-03-16 08:38:40
+3;Souris;14.50;40;Informatique;2026-03-16 08:38:40
+5;Casque;49.90;12;Audio;2026-03-16 08:38:40
+7;Disque SSD 512Go;59.99;8;Stockage;2026-03-16 08:38:40
+9;Câble Ethernet;6.99;60;Réseau;2026-03-16 08:38:40

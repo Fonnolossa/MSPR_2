@@ -1,4 +1,0 @@
-Script 1 :
-    AD --> ldap3
-    DNS --> dnspython
-    Sql --> mariadb

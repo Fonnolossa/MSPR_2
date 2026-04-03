@@ -1,0 +1,66 @@
+[
+    {
+        "host": "192.168.1.1",
+        "os": "FreeBSD"
+    },
+    {
+        "host": "192.168.1.100",
+        "os": "Debian"
+    },
+    {
+        "host": "192.168.1.101",
+        "os": "Debian"
+    },
+    {
+        "host": "192.168.1.110",
+        "os": "Debian"
+    },
+    {
+        "host": "192.168.1.111",
+        "os": "Debian"
+    },
+    {
+        "host": "192.168.1.115",
+        "os": "Debian"
+    },
+    {
+        "host": "192.168.1.150",
+        "os": "Debian"
+    },
+    {
+        "host": "192.168.1.151",
+        "os": "Debian"
+    },
+    {
+        "host": "192.168.1.200",
+        "os": "Debian"
+    },
+    {
+        "host": "192.168.1.201",
+        "os": "windows"
+    },
+    {
+        "host": "192.168.1.202",
+        "os": "Debian"
+    },
+    {
+        "host": "192.168.1.210",
+        "os": "Debian"
+    },
+    {
+        "host": "192.168.1.220",
+        "os": "Erreur: Authentication failed."
+    },
+    {
+        "host": "192.168.1.240",
+        "os": "Debian"
+    },
+    {
+        "host": "192.168.1.50",
+        "os": "windows-server"
+    },
+    {
+        "host": "192.168.1.70",
+        "os": "Ubuntu"
+    }
+]
