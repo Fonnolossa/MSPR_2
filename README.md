@@ -4,6 +4,7 @@ Ce document explique comment télécharger le projet depuis GitHub, créer un en
 
 Cela est a effectuer depuis n'importe qu'elle environement Linux
 Assurer vous que votre utilisateur est les droits sudo
+Pour Windows utiliser WSL
 
 ---
 
@@ -37,11 +38,6 @@ python -m venv env
 ```bash
 source env/bin/activate
 ```
-ou
-
-```powershell
-env\Scripts\activate
-```
 
 ## 3. Installer les dépendances
 
@@ -55,5 +51,5 @@ pip install -r requirements.txt
 # 4. Lancer le projet
 Une fois les dépendances installées, vous pouvez exécuter le projet selon les instructions spécifiques à votre application (par exemple, lancer un script principal) :
 ```bash
-python3.12 Start/main.py
+python Start/main.py
 ```
