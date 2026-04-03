@@ -1,3 +1,7 @@
 Python/
 audit_obsolescence/__pycache__/
+<<<<<<< HEAD
 .env
+=======
+.env
+>>>>>>> 84f66f0 (WMS)
