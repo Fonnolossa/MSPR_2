@@ -1,20 +1,10 @@
 import sys
 import time
-<<<<<<< HEAD
 import subprocess
-=======
->>>>>>> 5c3f4b8 (Start Menu)
 from rich.console import Console
 from rich.panel import Panel
 from rich.prompt import Prompt
 from rich.text import Text
-
-# Import de ton module (assure-toi qu'il s'appelle bien diag_ad_dns.py)
-<<<<<<< HEAD
-#import Diag_AD_DNS
-=======
-import Diag_AD_DNS
->>>>>>> 5c3f4b8 (Start Menu)
 
 # Initialisation de la console
 console = Console()
