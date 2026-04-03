@@ -25,17 +25,22 @@ Il est recommandé d’utiliser un environnement virtuel pour isoler les dépend
 
 1. Assurez-vous que Python 3.12 est installé sur votre machine :
 ```bash
-python3.12 --version
+python --version
 ```
 
 2. Créez l’environnement virtuel :
 ```bash
-python3.12 -m venv env
+python -m venv env
 ```
 
 3. Activez l’environnement :
 ```bash
 source env/bin/activate
+```
+ou
+
+```powershell
+env\Scripts\activate
 ```
 
 ## 3. Installer les dépendances
