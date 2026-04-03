@@ -11,21 +11,33 @@ console = Console()
 def menu_principal():
     while True:
         console.print("\n[bold yellow]Que souhaitez-vous faire ?[/bold yellow]")
-        console.print("[1] [green]Script 1 : Sauvegarde de la base de données[/green]")
-        console.print("[2] [magenta]Script 2 : EXport de table[/magenta]")
+        console.print("[1] [green]Script 1 : Diagnostic AD & DNS[/green]")
+        console.print("[2] [magenta]Script 2 : Diagnostic Mysql[/magenta]")
+        console.print("[3] [magenta]Script 3 : Diagnostic Ubuntu[/magenta]")
+        console.print("[4] [magenta]Script 4 : Diagnostic Windows server[/magenta]")
         console.print("[Q] [red]Quitter[/red]")
 
-        choix = Prompt.ask("\n[bold white]Entrez votre choix[/bold white]", choices=["1", "2", "Q"])
+        choix = Prompt.ask("\n[bold white]Entrez votre choix[/bold white]", choices=["1", "2", "3", "4", "Q"])
 
         if choix == "1":
             console.clear()
-            console.print("[bold green]Lancement de Sauvegarde de la base de données[/bold green]\n")
-            subprocess.run(["python3.12", "sauvegarde_WMS/backup_sql.py"])
+            console.print("[bold green]Lancement de Diagnostic AD & DNS[/bold green]\n")
+            subprocess.run(["python3.12", "diagnostic/AD_DNS.py"])
 
         elif choix == "2":
             console.clear()
-            console.print("[bold green]Lancement de Export de table[/bold green]\n")
-            subprocess.run(["python3.12", "sauvegarde_WMS/export_csv.py"])
+            console.print("[bold green]Lancement de Diagnostic Mysql[/bold green]\n")
+            subprocess.run(["python3.12", "diagnostic/Mysql.py"])
+
+        elif choix == "3":
+            console.clear()
+            console.print("[bold green]Lancement de Diagnostic Ubuntu[/bold green]\n")
+            subprocess.run(["python3.12", "diagnostic/ubuntu.py"])
+
+        elif choix == "4":
+            console.clear()
+            console.print("[bold green]Lancement de Diagnostic Windows server[/bold green]\n")
+            subprocess.run(["python3.12", "diagnostic/windows.py"])
 
         elif choix == "Q":
             console.print("\n[bold red]Fermeture de NTL-SysToolbox. Au revoir ![/bold red]")

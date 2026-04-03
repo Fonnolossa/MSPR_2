@@ -8,7 +8,13 @@ from rich.table import Table
 # Initialisation de la console pour l'affichage coloré
 console = Console()
 # Chargement des variables depuis config.env
-load_dotenv("config.env")
+load_dotenv()
+
+DC_01_IP = os.getenv("DC01_IP")
+DC_02_IP = os.getenv("DC02_IP")
+domain_user = os.getenv("DOMAIN_USER")
+domain_pass = os.getenv("DOMAIN_PASS")
+domain_name = os.getenv("DOMAIN_NAME")
 
 
 def check_dns(dc_ip, domain_name):
@@ -53,21 +59,12 @@ def check_ad_ldap(dc_ip, user, password):
 def run_ad_dns_diagnostic():
     # Affichage du titre du module
     console.print("\n[bold blue]Lancement du diagnostic AD & DNS...[/bold blue]\n")
-
-    # Récupération des variables du fichier .env
-    domain_name = os.getenv("DOMAIN_NAME")
-
-    # Gestion du problème potentiel de backslash pour le nom d'utilisateur
-    # On force la conversion en raw string ou on laisse tel quel si on utilise format email
-    domain_user = os.getenv("DOMAIN_USER")
-
-    domain_pass = os.getenv("DOMAIN_PASS")
-
     # Dictionnaire de nos contrôleurs de domaine
     domain_controllers = {
-        "DC01": os.getenv("DC01_IP"),
-        "DC02": os.getenv("DC02_IP")
+        "DC01": DC_01_IP,
+        "DC02": DC_02_IP
     }
+
 
     # Création du tableau d'affichage avec rich
     table = Table(title=f"État des Contrôleurs de Domaine ({domain_name})")
