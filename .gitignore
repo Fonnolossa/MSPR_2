@@ -1,3 +1,7 @@
 Python/
 audit_obsolescence/__pycache__/
 .env
+JSON_Fichier/*
+Sauvegarde_SQL/*
+sauvegarde_WMS/*
+Sauvegarde_diagnostic/*
