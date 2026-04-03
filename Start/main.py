@@ -1,13 +1,20 @@
 import sys
 import time
+<<<<<<< HEAD
 import subprocess
+=======
+>>>>>>> 5c3f4b8 (Start Menu)
 from rich.console import Console
 from rich.panel import Panel
 from rich.prompt import Prompt
 from rich.text import Text
 
 # Import de ton module (assure-toi qu'il s'appelle bien diag_ad_dns.py)
+<<<<<<< HEAD
 #import Diag_AD_DNS
+=======
+import Diag_AD_DNS
+>>>>>>> 5c3f4b8 (Start Menu)
 
 # Initialisation de la console
 console = Console()
@@ -54,14 +61,9 @@ def menu_principal():
         choix = Prompt.ask("\n[bold white]Entrez votre choix[/bold white]", choices=["1", "2", "3", "Q"])
 
         if choix == "1":
-            console.clear()
-            console.print("[bold green]Lancement du Module de Diagnostic...[/bold green]\n")
-
-            # Exécution de ton script
-            #Diag_AD_DNS.run_ad_dns_diagnostic()
-
-            # Pause avant de retourner au menu
-            #Prompt.ask("\n[dim]Appuyez sur Entrée pour revenir au menu...[/dim]")
+            chemin_script = "diagnostic/choix_fonction.py"
+            subprocess.run(["python3.12", chemin_script])
+            sys.exit(0)
 
         elif choix == "2":
             chemin_script = "sauvegarde_WMS/choix_fonction.py"
