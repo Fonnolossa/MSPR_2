@@ -1,0 +1,10 @@
+{
+    "serveurs_linux": [
+        {
+            "nom": "Ubuntu",
+            "ip": "172.16.133.101",
+            "utilisateur": "ismanuel",
+            "mot_de_passe": "abcd"
+        }
+    ]
+}
